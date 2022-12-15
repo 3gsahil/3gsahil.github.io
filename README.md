@@ -1,3 +1,3 @@
-# test.site.com
+# just an website or landing page of mine .
 
-just playing out and  learning things 
+xahilg18.github.io
