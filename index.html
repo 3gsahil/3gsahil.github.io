@@ -1,51 +1,75 @@
-<html>
-	<head>
-		<title> Sahil Gedam - 3gsahil </title>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
-	</head>
-	<body>
-		<div class="content">
-			<div>
-				<h2><a id="header_title" href="index.html"> Sahil Gedam </a></h2>
-				<h2 id="header_subtitle"> $@}{!\_ <br> </h2>
-				<h2 id="header_subtitle"> 👨‍💻 🤖 🐧 🖼️ 🎞️ 🎵 ✍️ 🌙 ☀️ </h2>
-			<h2 id="header_subtitle">  A computer worm that loves Android , Linux and everything FOSS . </h2>
-			</div>
-			<br>
-			<h3>What are you looking for?</h3>
-			<ul>
-				<li><h4> <a href="Certifications.html">Certifications</a> </h4></li>
-				<li><h4> <a href="Posts.html">Posts</a> </h4></li>
-				<li><h4> <a href="Projects.html">Projects</a> </h4></li>
-				<li><h4><a href="./Resume.html" target="_blank"><p>Resume</p></a> </h4></li>
-				<li><h4><a href="https://0x0.st/XMg-.pdf/3gsahil-resume.pdf" target="_blank"><p>Resume PDF</p></a> </h4></li>
-				
-				<br>
-				
-				<li><h4> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">do not click here</a> </h4></li>
-			</ul>
-			<br>
-			<div>
-				<h3>My Social links</h3>
-				<br>
-					<ul>
-						<li><h4>Twitter / X :  <a target="_blank" href="https://x.com/3gsahil">3gsahil</a> </h4></li>
-						
-						<li><h4>Linkedin :   <a target="_blank" href="https://www.linkedin.com/in/3gsahil/">3gsahil</a>  </h4></li>
-	
-						<li><h4>GitHub :   <a target="_blank" href="https://github.com/3gsahil">3gsahil</a>  </h4></li>
-                                                <li><h4>Instagram : <a target="_blank" href="https://instagram.com/3gsahil">3gsahil</a> </h4></li>
-						<li><h4>Telegram : <a target="_blank" href="https://t.me/g3sahil">g3sahil</a>        </h4></li>
-					</ul>
-				<br>
-				
-				<h3>I also write/post some literature and poetry stuff , on below instagram account</h3>
-				<ul>
-					<li><h4> Canvasofsahil  <a target="_blank" href="https://instagram.com/canvasofsahil">@canvasofsahil</a>  </h4></li>
-				</ul>	
-			</div>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Gedam - 3gsahil webplate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="dark-mode"> 
+
+    <nav class="liquid-glass">
+        <a id="logo" href="#" onclick="showSection('home')">Sahil Gedam</a>
+        
+        <div class="nav-container">
+            <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+
+            <button class="hamburger" id="hamBtn" onclick="toggleMenu(event)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <span class="nav-item active" onclick="handleNavClick('home')">Home</span>
+                <span class="nav-item" onclick="handleNavClick('experience')">Experience</span>
+                <span class="nav-item" onclick="handleNavClick('projects')">Projects</span>
+                <span class="nav-item" onclick="handleNavClick('certifications')">Certifications</span>
+                <span class="nav-item" onclick="handleNavClick('music')">Music</span>
+                <span class="nav-item" onclick="handleNavClick('movies')">Movies</span>
+                <span class="nav-item" onclick="handleNavClick('Art')">Art</span>
+                <a href="resume.pdf" target="_blank" class="nav-item">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="active">
+            <div class="profile-container liquid-glass">
+                <div class="profile-text">
+                    <h2>Hello There Visitor!                   </h2>
+                    <br>
+                    <p class="description">I am <strong><h3><i>3gsahil,</i></h3> </strong>formally known as <strong>SAHIL GEDAM</strong>.
+                        <br> </p>
+                        <br> 
+                        <p class="description"></p> I am a Systems and AI-ML Engineer focused on architecting resilient CyberNetwork Security infrastructure at the convergence of Cybersecurity, AI, and DevOps. </p>
+                    
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/3gsahil" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/3gsahil" target="_blank">GitHub</a>
+                        <a href="https://instagram.com/3gsahil" target="_blank">Instagram</a>
+                        <a href="https://x.com/3gsahil" target="_blank">X / Twitter</a>
+                        <a href="https://t.me/g3sahil" target="_blank">Telegram</a>
+                        
+                        <a href="https://3gsahil.github.io/resume.pdf" width="100%" height="850px">Resume</a>
+                    </div>
+                </div>
+                <img src="assets/images/sahil-portrait.gif" alt="Sahil Gedam" class="profile-img">
+            </div>
+        </section>
+
+        <section id="experience" class="experience-container"></section>
+        <section id="projects" class="experience-container"></section>
+        <section id="certifications" class="experience-container"></section>
+        <section id="music" class="experience-container"></section>
+        <section id="movies" class="experience-container"></section>
+        <section id="Art" class="experience-container"></section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
